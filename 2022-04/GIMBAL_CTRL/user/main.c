@@ -10,6 +10,8 @@
 #include "can.h"
 #include "rc.h"
 
+RCC_ClocksTypeDef sys_clock;
+
 //初始化驱动
 void Bsp_Init(void)
 {
@@ -30,10 +32,10 @@ void Bsp_Init(void)
 //初始化设备
 void Device_Init(void)
 {
-		gimbal.state_Setup(CALIBRATING);
-		shoot.state_Setup(CALIBRATING);
-		cover.state_Setup(CALIBRATING);
-		chassis.state_Setup(CALIBRATING);
+	gimbal.state_Setup (CALIBRATING);
+	shoot.state_Setup  (CALIBRATING);
+	cover.state_Setup  (CALIBRATING);
+	chassis.state_Setup(CALIBRATING);
 }
 
 //初始化算法参数
@@ -51,6 +53,7 @@ void Gimbal_System_Init(void)
     Bsp_Init();
     Device_Init();
     Algorithms_Init();
+	RCC_GetClocksFreq(&sys_clock);
     FreeRTOS_Init();
 }
 

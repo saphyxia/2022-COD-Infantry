@@ -17,36 +17,39 @@ float distance;
 int jjj;
 void Vision_Check_Data(uint8_t *ReadFromUsart)
 {
-    if(ReadFromUsart[0]==0xAA&&ReadFromUsart[11]==0x54){
-				sum_check = ReadFromUsart[1]+ReadFromUsart[2]+ReadFromUsart[3]+ReadFromUsart[4]
-						+ ReadFromUsart[5]+ReadFromUsart[6]+ReadFromUsart[7];
-				if(sum_check!=ReadFromUsart[8]) 
-					return;
-        if(ReadFromUsart[1]==1){//识别到目标
-					findtime = xTaskGetTickCount();
-					tx2.isFind=1; 
-					 pit_unsigned = ReadFromUsart[4] + ReadFromUsart[5]*0.01f;
-					 yaw_unsigned = ReadFromUsart[2] + ReadFromUsart[3]*0.01f;
-					 vision_fire = ReadFromUsart[7] ;
-					distance= ReadFromUsart[9]+((int)(ReadFromUsart[10]*0.1))*0.1f;
+    if(ReadFromUsart[0]==0xAA&&ReadFromUsart[11]==0x54)
+	{
+		//加和校验
+		sum_check = ReadFromUsart[1]+ReadFromUsart[2]+ReadFromUsart[3]+ReadFromUsart[4]
+				  + ReadFromUsart[5]+ReadFromUsart[6]+ReadFromUsart[7];
+		if(sum_check!=ReadFromUsart[8]) return;
+		//识别到目标
+		if(ReadFromUsart[1]==1)
+		{
+			findtime = xTaskGetTickCount();
+			tx2.isFind=1; 
+			 pit_unsigned = ReadFromUsart[4] + ReadFromUsart[5]*0.01f;
+			 yaw_unsigned = ReadFromUsart[2] + ReadFromUsart[3]*0.01f;
+			 vision_fire = ReadFromUsart[7] ;
+			distance= ReadFromUsart[9]+((int)(ReadFromUsart[10]*0.1))*0.1f;
 
             switch (ReadFromUsart[6])
             {
             case 1://++
                 pit_signed = -pit_unsigned;
-                yaw_signed = +yaw_unsigned;
+                yaw_signed = -yaw_unsigned;
                 break;
             case 2://+-
                 pit_signed = -pit_unsigned;
-                yaw_signed = -yaw_unsigned;
+                yaw_signed = +yaw_unsigned;
                 break;
             case 3://--
                 pit_signed = +pit_unsigned;
-                yaw_signed = -yaw_unsigned;
+                yaw_signed = +yaw_unsigned;
                 break;
             case 4://-+
                 pit_signed = +pit_unsigned;
-                yaw_signed = +yaw_unsigned;
+                yaw_signed = -yaw_unsigned;
                 break;
             default:
                 break;

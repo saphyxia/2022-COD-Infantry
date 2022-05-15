@@ -5,6 +5,7 @@
 #include "vision_Task.h"
 #include "systemState_Task.h"
 #include "gimbal_Task.h"
+#include "imu_Task.h"
 
 /*--------------------------   变量声明   ------------------------------*/
 
@@ -52,21 +53,21 @@ void VISION_TASK(void *args)
 		currentTime = xTaskGetTickCount();//当前系统时间
 	
 		vision.delta_T = get_delta_time();    //数据更新耗时
-		if(!vision.tx2->isFind)
-		{
-//			key_KF=0;
-		}
+//		if(!vision.tx2->isFind)
+//		{
+////			key_KF=0;
+//		}
 		if(vision.tx2->isUpdata && vision.tx2->isFind && vision_Flag)//识别到装甲板并且视觉数据更新
 		{
-			if(key_KF!=1)
-			{
-				KF_Cnt++;
-				if(KF_Cnt>=30)
-				{
-					key_KF=1;
-					KF_Cnt=0;
-				}
-			}
+//			if(key_KF!=1)
+//			{
+//				KF_Cnt++;
+//				if(KF_Cnt>=30)
+//				{
+////					key_KF=1;
+//					KF_Cnt=0;
+//				}
+//			}
 			//求装甲板位置
 			armor_position2vision[0] = KalmanFilter(&KF_YAW_ANGLE,vision.tx2->yaw_Err[0]) + imu_yaw_angle;
 			imu_yaw_angle = vision.imu->yaw_Angle;//回溯视觉误差更新时的陀螺仪角度
@@ -111,22 +112,6 @@ void VISION_TASK(void *args)
 			}else{
 					IF_Fire_Ready=false;
 			}
-		}else
-		{
-//			key_KF=0;
-//			imu_yaw_angle = vision.imu->yaw_Angle;
-//			memset(yaw_Queue_speed.queue,0,sizeof(yaw_Queue_speed.queue));
-//			memset(yaw_Queue_accel.queue,0,sizeof(yaw_Queue_accel.queue));
-//			yaw_Queue_speed.nowLength=0;
-//			yaw_Queue_speed.full_flag=0;
-//			yaw_Queue_speed.queueTotal =0;
-//			yaw_Queue_accel.nowLength=0;
-//			yaw_Queue_accel.full_flag=0;
-//			yaw_Queue_accel.queueTotal=0;
-//			armor_velocity2vision[0]=0;
-//			armor_accel2vision[0]=0;
-//			predictValue[0] = 0;
-//			IF_Fire_Ready=false;
 		}
 		//使用预测量补偿视觉误差
 		vision.yaw = vision.tx2->yaw_Err[0]+predictValue[0]*yaw_feed;
@@ -189,23 +174,23 @@ static TickType_t get_delta_time(void)
 }
 static void send2uart1(void)
 {
-
-    vision.send2uart.inform[0] = (int)ABS(14.5f);// robot.bullet_speed < 14.f ? 14.3f : robot.bullet_speed;
-    vision.send2uart.inform[1] = (int)ABS(14.5f*100)%100;//(int)((robot.bullet_speed < 14.0f ? 14.5f : robot.bullet_speed)*100)%100;
-    vision.send2uart.inform[2] = (int16_t)imu.pit_Angle;
-    vision.send2uart.inform[3] = (int16_t)(imu.pit_Angle*100.f)%100;
 		
-    UART1_TX_BUF[0] = 0x69;
-    UART1_TX_BUF[1] = tx2.color_Flag;
-    UART1_TX_BUF[2] = 1;
-    UART1_TX_BUF[3] = tx2.kf_Flag;
-    UART1_TX_BUF[4] = vision.send2uart.inform[0];
-    UART1_TX_BUF[5] = vision.send2uart.inform[1];
-    UART1_TX_BUF[6] = vision.send2uart.inform[2];
-    UART1_TX_BUF[7] = vision.send2uart.inform[3];
-		UART1_TX_BUF[8] = UART1_TX_BUF[1]+UART1_TX_BUF[2]+UART1_TX_BUF[3] \
-										+ UART1_TX_BUF[4]+UART1_TX_BUF[5]+UART1_TX_BUF[6]+UART1_TX_BUF[7];
-		UART1_TX_BUF[9] = 0x96;
+    UART1_TX_BUF[0]  = 0x69;
+    UART1_TX_BUF[1]  = tx2.color_Flag;
+    UART1_TX_BUF[2]  = 1;
+    UART1_TX_BUF[3]  = tx2.kf_Flag;
+    UART1_TX_BUF[4]  = (int)ABS(14.5f);
+    UART1_TX_BUF[5]  = (int)ABS(14.5f*100)%100;
+    UART1_TX_BUF[6]  = (int16_t) (INS_angle[2]);
+    UART1_TX_BUF[7]  = (int16_t)((INS_angle[2])*100.f)%100;
+	UART1_TX_BUF[8]  = (int16_t)((INS_angle[2])*10000.f)%100;
+    UART1_TX_BUF[9]  = (int16_t)(-INS_angle[0]);
+    UART1_TX_BUF[10] = (int16_t)((-INS_angle[0])*100.f)%100;
+    UART1_TX_BUF[11] = (int16_t)((-INS_angle[0])*10000.f)%100;
+	UART1_TX_BUF[12] = (UART1_TX_BUF[1]+UART1_TX_BUF[2]+UART1_TX_BUF[3] + UART1_TX_BUF[4]+UART1_TX_BUF[5] + UART1_TX_BUF[6]
+					 + UART1_TX_BUF[7]+UART1_TX_BUF[8] + UART1_TX_BUF[9]+UART1_TX_BUF[10]+UART1_TX_BUF[11])/11;
+	
+	UART1_TX_BUF[13] = 0x96;
 		
     DMA_Cmd(DMA2_Stream6,ENABLE);
 }

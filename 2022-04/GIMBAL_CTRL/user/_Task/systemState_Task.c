@@ -14,7 +14,64 @@
 ROBOT robot=
 {
     .mode=INITIAL,
-    .level=LV_0,
+    .level=LV_1,
+	.shooter_id1_17mm.cooling_limit = 50,
+	.shooter_id1_17mm.cooling_rate = 10,
+	.shooter_id1_17mm.speed_limit = 15,
+};
+ROBOT_SHOOTER_T Shooter_BURST[ROBOT_LEVEL_NUM]=
+{
+	[LV_1]={
+		.cooling_limit = 150,
+		.cooling_rate = 15,
+		.speed_limit = 15,
+	},
+	[LV_2]={
+		.cooling_limit = 280,
+		.cooling_rate = 25,
+		.speed_limit = 15,
+	},
+	[LV_3]={
+		.cooling_limit = 400,
+		.cooling_rate = 35,
+		.speed_limit = 15,
+	},
+};
+ROBOT_SHOOTER_T Shooter_COOLING[ROBOT_LEVEL_NUM]=
+{
+	[LV_1]={
+		.cooling_limit = 50,
+		.cooling_rate = 40,
+		.speed_limit = 15,
+	},
+	[LV_2]={
+		.cooling_limit = 100,
+		.cooling_rate = 60,
+		.speed_limit = 18,
+	},
+	[LV_3]={
+		.cooling_limit = 150,
+		.cooling_rate = 80,
+		.speed_limit = 18,
+	},
+};
+ROBOT_SHOOTER_T Shooter_RATE[ROBOT_LEVEL_NUM]=
+{
+	[LV_1]={
+		.cooling_limit = 75,
+		.cooling_rate = 15,
+		.speed_limit = 30,
+	},
+	[LV_2]={
+		.cooling_limit = 150,
+		.cooling_rate = 25,
+		.speed_limit = 30,
+	},
+	[LV_3]={
+		.cooling_limit = 200,
+		.cooling_rate = 35,
+		.speed_limit = 30,
+	},
 };
 /*--------------------------   变量声明   ------------------------------*/
 
@@ -24,68 +81,8 @@ void SYSTEMSTATE_TASK(void *args)
     
 	while(1)
 	{
-		myprintf(gimbal.target.yaw_Angle*100,imu.yaw_Angle*100);
+		myprintf(vision.tx2->pit_Err[0]* 100,vision.tx2->yaw_Err[0]*100);
 		currentTime = xTaskGetTickCount();//当前系统时间
-
-		if(robot.mode == INITIAL)
-		{
-			robot.shooter_id1_17mm.cooling_limit = 50;
-			robot.shooter_id1_17mm.cooling_rate = 10;
-			robot.shooter_id1_17mm.speed_limit = 15;
-		}
-		else if(robot.mode == BURST)
-		{
-			if(robot.level == LV_2)
-			{
-				robot.shooter_id1_17mm.cooling_limit = 280;
-				robot.shooter_id1_17mm.cooling_rate = 25;
-				robot.shooter_id1_17mm.speed_limit = 15;
-			}else if(robot.level == LV_3)
-			{
-				robot.shooter_id1_17mm.cooling_limit = 400;
-				robot.shooter_id1_17mm.cooling_rate = 35;
-				robot.shooter_id1_17mm.speed_limit = 15;
-			}else
-			{
-				robot.shooter_id1_17mm.cooling_limit = 150;
-				robot.shooter_id1_17mm.cooling_rate = 15;
-				robot.shooter_id1_17mm.speed_limit = 15;
-			}
-		}else if(robot.mode == COOLING)
-		{
-			if(robot.level == LV_2)
-			{
-				robot.shooter_id1_17mm.cooling_limit = 100;
-				robot.shooter_id1_17mm.cooling_rate = 60;
-				robot.shooter_id1_17mm.speed_limit = 18;
-			}else if(robot.level == LV_3)
-			{
-				robot.shooter_id1_17mm.cooling_limit = 150;
-				robot.shooter_id1_17mm.cooling_rate = 80;
-				robot.shooter_id1_17mm.speed_limit = 18;
-			}else{
-				robot.shooter_id1_17mm.cooling_limit = 50;
-				robot.shooter_id1_17mm.cooling_rate = 40;
-				robot.shooter_id1_17mm.speed_limit = 15;
-			}
-		}else if(robot.mode == RATE)
-		{
-			if(robot.level == LV_2)
-			{
-				robot.shooter_id1_17mm.cooling_limit = 150;
-				robot.shooter_id1_17mm.cooling_rate = 25;
-				robot.shooter_id1_17mm.speed_limit = 30;
-			}else if(robot.level == LV_3)
-			{
-				robot.shooter_id1_17mm.cooling_limit = 200;
-				robot.shooter_id1_17mm.cooling_rate = 35;
-				robot.shooter_id1_17mm.speed_limit = 30;
-			}else{
-				robot.shooter_id1_17mm.cooling_limit = 75;
-				robot.shooter_id1_17mm.cooling_rate = 15;
-				robot.shooter_id1_17mm.speed_limit = 30;
-			}
-		}
 
 		vTaskDelayUntil(&currentTime, SYSTEMSTATE_TASK_TIM);//绝对延时
 	}
@@ -121,17 +118,23 @@ void Referee_get_Data(CAN_TypeDef* CANx,CanRxMsg* RxMsg)
 		if(mode_L == 0&& mode_H == 0)
 		{
 			robot.mode = INITIAL;
+			robot.shooter_id1_17mm.cooling_limit = 50;
+			robot.shooter_id1_17mm.cooling_rate = 10;
+			robot.shooter_id1_17mm.speed_limit = 15;
 		}else if(mode_L == 0&& mode_H == 1)
 		{
 			robot.mode = BURST;
+			robot.shooter_id1_17mm = Shooter_BURST[robot.level];
 		}else if(mode_L == 1&& mode_H == 0)
 		{
 			robot.mode = COOLING;
+			robot.shooter_id1_17mm = Shooter_COOLING[robot.level];
 		}else if(mode_L == 1&& mode_H == 1)
 		{
 			robot.mode = RATE;
+			robot.shooter_id1_17mm = Shooter_RATE[robot.level];
 		}
-
+		
 		robot.cooling_heat = (int16_t)RxMsg->Data[1] << 8 | (int16_t)RxMsg->Data[2];//17mm 枪口热量
 		robot.bullet_speed = ((int16_t)RxMsg->Data[3] << 8 | (int16_t)RxMsg->Data[4])/100.f; //17mm枪口射速
 		robot.Chas_Gyro = ((int16_t)RxMsg->Data[5] << 8 | (int16_t)RxMsg->Data[6])/100.f;//底盘角速度

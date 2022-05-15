@@ -49,7 +49,7 @@ extern void RC_restart(uint16_t dma_buf_num);
 #define LONG_CHANGE_TIM_C      		300 	//ms
 #define LONG_CHANGE_TIM_V      		300 	//ms
 #define LONG_CHANGE_TIM_B      		300 	//ms
-#define LONG_CHANGE_TIM_CTRL   		300	//ms
+#define LONG_CHANGE_TIM_CTRL   		300	    //ms
 #define LONG_CHANGE_TIM_SHIFT  		300 	//ms
 #define LONG_CHANGE_TIM_MOUSE_L		300 	//ms
 #define LONG_CHANGE_TIM_MOUSE_R		300 	//ms

@@ -24,7 +24,6 @@ typedef enum{
 }ROBOT_MODE;
 
 typedef enum{
-    LV_0,
     LV_1,
     LV_2,
     LV_3,
@@ -42,7 +41,7 @@ typedef __packed struct
 typedef __packed struct 
 {
 		uint8_t id; //机器人Id 0红1蓝
-    ROBOT_LEVEL level; //等级
+		ROBOT_LEVEL level; //等级
 		ROBOT_MODE mode; //发射机构类型
 		uint8_t mains_power_shooter_output;//主控输出情况，0 无输出 1 24V
 		uint16_t cooling_heat;   //枪口热量

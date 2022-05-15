@@ -6,7 +6,7 @@
 #define UART2_MAX_TX_LEN    6
 
 #define UART1_MAX_RX_LEN    12
-#define UART1_MAX_TX_LEN    10
+#define UART1_MAX_TX_LEN    14
 
 extern uint8_t UART1_RX_BUF[UART1_MAX_RX_LEN];//定义串口1接收缓存大小为10
 extern uint8_t UART1_TX_BUF[UART1_MAX_TX_LEN];//定义串口1发送缓存，大小为9

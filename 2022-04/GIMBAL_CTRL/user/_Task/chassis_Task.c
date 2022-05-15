@@ -11,13 +11,13 @@
 
 CHASSIS chassis=
 {
-		.ctrl =1,
+	.ctrl =1,
     .state=OFF,
     .mode=FOLO,
     .txMsg=&CAN_TxMsg[_CAN2][_0x300],
     .dr16=&rc_ctrl,
     .state_Setup=chassis_State_Handoff,
-		.mode_Setup=chassis_Mode_Handoff,
+	.mode_Setup=chassis_Mode_Handoff,
 };
 
 /*--------------------------   变量声明   ------------------------------*/
@@ -30,7 +30,7 @@ void CHASSIS_TASK(void *args)
 	while(1)
 	{
 		currentTime = xTaskGetTickCount();//当前系统时间
-    //模式控制没加呢！！！
+//模式控制没加呢！！！
 		
 //		if(rc_ctrl.rc.ch[4]==660)
 //		{

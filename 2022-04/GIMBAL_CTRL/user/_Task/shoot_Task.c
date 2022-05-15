@@ -22,25 +22,21 @@ SHOOT shoot=
     .wheel_Speed={
         [ON]={
             [INITIAL]={//初始
-                [LV_0]=SHOOT_SPEED_15M_S,
                 [LV_1]=SHOOT_SPEED_15M_S,
                 [LV_2]=SHOOT_SPEED_15M_S,
                 [LV_3]=SHOOT_SPEED_15M_S,
             },
             [BURST]={//爆发优先
-                [LV_0]=SHOOT_SPEED_15M_S,
                 [LV_1]=SHOOT_SPEED_15M_S,
                 [LV_2]=SHOOT_SPEED_15M_S,
                 [LV_3]=SHOOT_SPEED_15M_S,
             },
             [COOLING]={//冷却优先
-                [LV_0]=SHOOT_SPEED_15M_S,
                 [LV_1]=SHOOT_SPEED_15M_S,
                 [LV_2]=SHOOT_SPEED_18M_S,
                 [LV_3]=SHOOT_SPEED_18M_S,
             },
             [RATE]={//射速优先
-                [LV_0]=SHOOT_SPEED_15M_S,
                 [LV_1]=SHOOT_SPEED_30M_S,
                 [LV_2]=SHOOT_SPEED_30M_S,
                 [LV_3]=SHOOT_SPEED_30M_S,

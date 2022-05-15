@@ -132,7 +132,8 @@ void IMU_TASK(void *args)
         get_angle(INS_quat, INS_angle + INS_YAW_ADDRESS_OFFSET , INS_angle + INS_PITCH_ADDRESS_OFFSET, INS_angle + INS_ROLL_ADDRESS_OFFSET);
         
         imu.calibrating=0;//校准完毕
-        imu.yaw_Angle = Gimbal_Yaw_Gryo_AngleSum(&Yaw_Gyro_Angle , INS_angle[0]*180.0f/3.1415926f);//过零角度处理
+		INS_angle[0]= Gimbal_Yaw_Gryo_AngleSum(&Yaw_Gyro_Angle , INS_angle[0]);
+        imu.yaw_Angle = INS_angle[0]*180.0f/3.1415926f;//过零角度处理
         imu.pit_Angle = INS_angle[2]*180.0f/3.1415926f;
         imu.rol_Angle = INS_angle[1]*180.0f/3.1415926f;
         imu.pit_Gyro  =-INS_gyro [0]*180.0f;
@@ -355,10 +356,10 @@ float Gimbal_Yaw_Gryo_AngleSum(Critical_t *critical, float get)
 	critical->CurAngle = get - critical->LastAngle;	//µ±Ç°ÍÓÂÝÒÇ½Ç¶È¼õÈ¥ÉÏÒ»´Î¶ÁÈ¡µÄÍÓÂÝÒÇ½Ç¶È£¬×÷ÎªÄãµÄ²Î¿¼·´À¡Öµ
 	critical->LastAngle = get;
 	/*  ÁÙ½ç´¦Àí£¬±£Ö¤Ã¿´Î¾­¹ýÁãµã·´À¡½Ç¶È¶¼ÊÇÁ¬ÐøµÄ  */
-	if(critical->CurAngle <= -180)		//×¢Òâ´Ë´¦ÊÇÍÓÂÝÒÇ½Ç¶È·Å´óºóµÄÁÙ½çÖµ
-		critical->CurAngle += 360;
-	if(critical->CurAngle >= 180)
-		critical->CurAngle -= 360;
+	if(critical->CurAngle <= -3.1415926f)		//×¢Òâ´Ë´¦ÊÇÍÓÂÝÒÇ½Ç¶È·Å´óºóµÄÁÙ½çÖµ
+		critical->CurAngle += 2.0f*3.1415926f;
+	if(critical->CurAngle >= 3.1415926f)
+		critical->CurAngle -= 2.0f*3.1415926f;
 	critical->AngleSum += critical->CurAngle;	
 
 	return critical->AngleSum;				//·µ»ØÐÂµÄ·´À¡½Ç¶È£¬×÷ÎªPIDËã·¨µÄ·´À¡Öµ

@@ -1,4 +1,4 @@
-#include "uart.h"
+ #include "uart.h"
 #include "vision.h"
 #include "vision_Task.h"
 
@@ -127,14 +127,13 @@ void USART6_IRQHandler(void)                	//串口6中断服务程序
 {
     if(USART_GetITStatus(USART6, USART_IT_IDLE) != RESET)  
     {
-				USART6_Clear_Flag = USART6->DR;
-				USART6_Clear_Flag = USART6->SR;
+		USART6_Clear_Flag = USART6->DR;
+		USART6_Clear_Flag = USART6->SR;
         DMA_Cmd(DMA2_Stream2,DISABLE );
 	//数据处理函数
         Vision_Check_Data(UART1_RX_BUF); 
 
         DMA_Cmd(DMA2_Stream2,ENABLE);
-
     }
 } 
 
@@ -186,23 +185,23 @@ void uart2_Init(u32 bound)
 
 //DMA
     DMA_InitStructure.DMA_Channel = DMA_Channel_4;
-		DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t) & (USART1->DR);
-		DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)UART2_TX_BUF;
-		DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral;
-		DMA_InitStructure.DMA_BufferSize = UART2_MAX_TX_LEN;
-		DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
-		DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
-		DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
-		DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
-		DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;
-		DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;
-		DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
-		DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
-		DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
-		DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-		DMA_Init(DMA2_Stream7, &DMA_InitStructure);
-		DMA_ITConfig(DMA2_Stream7,DMA_IT_TC,ENABLE);
-		DMA_Cmd(DMA2_Stream7, ENABLE);
+	DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t) & (USART1->DR);
+	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)UART2_TX_BUF;
+	DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral;
+	DMA_InitStructure.DMA_BufferSize = UART2_MAX_TX_LEN;
+	DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+	DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+	DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+	DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+	DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;
+	DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;
+	DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
+	DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
+	DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+	DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+	DMA_Init(DMA2_Stream7, &DMA_InitStructure);
+	DMA_ITConfig(DMA2_Stream7,DMA_IT_TC,ENABLE);
+	DMA_Cmd(DMA2_Stream7, ENABLE);
 
 //NVIC
     NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream7_IRQn;

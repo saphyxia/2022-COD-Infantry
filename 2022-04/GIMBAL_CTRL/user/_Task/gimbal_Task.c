@@ -106,10 +106,10 @@ void GIMBAL_TASK(void *args)
         default:
             break;
         }
-				//yaw轴前馈控制量计算
-				yaw_cps = ramp_Float(yaw_cps,(gimbal.target.yaw_Angle-target_yaw_last)*1000.0f,8);
-				target_yaw_last = gimbal.target.yaw_Angle;
-				//云台电机控制
+		//yaw轴前馈控制量计算
+		yaw_cps = ramp_Float(yaw_cps,(gimbal.target.yaw_Angle-target_yaw_last)*1000.0f,8);
+		target_yaw_last = gimbal.target.yaw_Angle;
+		//云台电机控制
         gimbal_Posture_Ctrl();
 				Key_Q();
 				Key_E();

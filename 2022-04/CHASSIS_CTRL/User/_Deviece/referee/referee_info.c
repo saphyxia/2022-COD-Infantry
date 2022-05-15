@@ -4,7 +4,7 @@
 #include "referee.h"
 
 ext_game_robot_status_t             game_robot_state;             //0x0201
-ext_power_heat_data_t 	        		power_heat_data;	      	  //0x0202
+ext_power_heat_data_t 	        	power_heat_data;	      	  //0x0202
 ext_buff_t                          buff_data;                    //0x0204
 ext_shoot_data_t                    real_shoot_data;              //0x0207
 ext_bullet_remaining_t              bullet_remaining;             //0x0208
@@ -28,6 +28,7 @@ float bit8TObit32(uint8_t *change_info)
     u32val.byte[3]=change_info[3];
 	return u32val.f;
 }
+
 /*
 *@title£ºint32Î»×ª8Î»
 *@description£º

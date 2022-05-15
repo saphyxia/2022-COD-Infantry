@@ -84,6 +84,7 @@ typedef struct
 
 #define BMI088_TEMP_PWM_MAX 5000 //mpu6500控制温度的设置TIM的重载值，即给PWM最大为 MPU6500_TEMP_PWM_MAX - 1
 
+extern fp32 INS_angle[3];      //euler angle, unit rad.欧拉角 单位 rad   
 //外部调用变量
 		
 int  IMU_Working_Detect(void);

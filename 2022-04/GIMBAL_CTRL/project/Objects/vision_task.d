@@ -69,3 +69,4 @@
 .\objects\vision_task.o: ..\user\_Device\motor.h
 .\objects\vision_task.o: ..\user\_Bsp\can.h
 .\objects\vision_task.o: ..\user\_Bsp\rc.h
+.\objects\vision_task.o: ..\user\_Task\imu_Task.h
