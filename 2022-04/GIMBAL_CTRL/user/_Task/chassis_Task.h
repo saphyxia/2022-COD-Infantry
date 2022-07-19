@@ -8,7 +8,7 @@
 
 typedef enum
 {
-		act_err,
+	act_err,
     INVA,
     FOLO,//跟随云台     follow
     SPIN,//小陀螺       spin

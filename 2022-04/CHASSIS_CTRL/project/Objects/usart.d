@@ -1,5 +1,5 @@
-.\objects\usart.o: ..\User\_Bsp\uasrt\usart.c
-.\objects\usart.o: ..\User\_Bsp\uasrt\usart.h
+.\objects\usart.o: ..\User\_Bsp\usart.c
+.\objects\usart.o: ..\User\_Bsp\usart.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\core_cm4.h
 .\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

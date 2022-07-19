@@ -73,7 +73,7 @@ float trigger_PID_Param[2][2][PID_Param_NUM]={
             10000 //T_OUT_MAX
         },
         [1]={
-            80,//P
+            90,//P
             0,//I
             0,//D
             200,//Err_Max 

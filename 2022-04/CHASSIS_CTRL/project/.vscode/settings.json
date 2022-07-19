@@ -43,7 +43,11 @@
         "referee.h": "c",
         "referee_info.h": "c",
         "usart.h": "c",
-        "xmemory": "c"
+        "xmemory": "c",
+        "chassis.h": "c",
+        "chassistask.h": "c",
+        "interactask.h": "c",
+        "statetask.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

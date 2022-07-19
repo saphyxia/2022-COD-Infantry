@@ -21,29 +21,23 @@ extern void System_Start_Task(void *args);
 
 /*###-----↓↓↓↓↓↓↓↓↓↓↓↓----   Task Configuration Table   ----↓↓↓↓↓↓↓↓↓↓↓↓↓-----###*/
 
-/*状态机任务*/
-#define STATE_TASK_PRIO              4       // 任务优先级
-#define STATE_STK_SIZE               256     // 任务堆栈大小
-TaskHandle_t STATE_Task_Handler;              // 任务句柄
-extern void STATE_TASK(void *args);
+/*交互任务*/
+#define INTERAC_TASK_PRIO              4       // 任务优先级
+#define INTERAC_STK_SIZE               256     // 任务堆栈大小
+TaskHandle_t INTERAC_Task_Handler;              // 任务句柄
+extern void InteracTask(void *args);
 
 /*底盘任务*/
-#define CHASSIS_TASK_PRIO              5       // 任务优先级
+#define CHASSIS_TASK_PRIO              4       // 任务优先级
 #define CHASSIS_STK_SIZE               1024     // 任务堆栈大小
 TaskHandle_t CHASSIS_Task_Handler;              // 任务句柄
-extern void CHASSIS_TASK(void *args);
+extern void ChassisTask(void *args);
 
-/*功率控制任务*/
-#define POWER_TASK_PRIO              5       // 任务优先级
-#define POWER_STK_SIZE               256     // 任务堆栈大小
-TaskHandle_t POWER_Task_Handler;              // 任务句柄
-extern void POWER_TASK(void *args);
-
-/*裁判系统任务*/
-#define REFEREE_TASK_PRIO              6       // 任务优先级
-#define REFEREE_STK_SIZE               256     // 任务堆栈大小
-TaskHandle_t REFEREE_Task_Handler;              // 任务句柄
-extern void REFEREE_TASK(void *args);
+/*陀螺仪任务*/
+#define IMU_TASK_PRIO              4       // 任务优先级
+#define IMU_STK_SIZE               256     // 任务堆栈大小
+TaskHandle_t IMU_Task_Handler;              // 任务句柄
+extern void ImuTask(void *args);
 
 /*###-----↑↑↑↑↑↑↑↑↑↑↑↑----   Task Configuration Table   ----↑↑↑↑↑↑↑↑↑↑↑↑↑-----###*/
 
@@ -67,19 +61,19 @@ void System_Start_Task(void *args)
 {
     taskENTER_CRITICAL();//进入临界区
 
-	/* 创建系统状态机任务 */
-	#if IS_STATETASK_ENABLE
-	xTaskCreate((TaskFunction_t		)STATE_TASK,						 // 任务函数
-							(const char*		)"STATE_TASK",		 // 任务名称
-							(uint16_t			)STATE_STK_SIZE,		 // 任务堆栈大小
+	/* 创建状态机任务 */
+	#if IS_IMUTASK_ENABLE
+	xTaskCreate((TaskFunction_t		)ImuTask,						 // 任务函数
+							(const char*		)"IMU_TASK",		 // 任务名称
+							(uint16_t			)IMU_STK_SIZE,		 // 任务堆栈大小
 							(void*				)NULL,						 // 传递给任务函数的参数
-							(UBaseType_t		)STATE_TASK_PRIO,	     // 任务优先级
-							(TaskHandle_t*		)&STATE_Task_Handler); // 任务句柄
+							(UBaseType_t		)IMU_TASK_PRIO,	     // 任务优先级
+							(TaskHandle_t*		)&IMU_Task_Handler); // 任务句柄
 	#endif
 
     /* 创建底盘任务 */
 	#if IS_CHASSISTASK_ENABLE
-    xTaskCreate((TaskFunction_t		)CHASSIS_TASK,						 
+    xTaskCreate((TaskFunction_t		)ChassisTask,						 
 							(const char*		)"CHASSIS_TASK",		 
 							(uint16_t			)CHASSIS_STK_SIZE,		 
 							(void*				)NULL,						 
@@ -88,24 +82,14 @@ void System_Start_Task(void *args)
 	#endif
 
 
-    /* 创建功率任务 */
-	#if IS_POWERTASK_ENABLE
-    xTaskCreate((TaskFunction_t		)POWER_TASK,						 
-							(const char*		)"POWER_TASK",		 
-							(uint16_t			)POWER_STK_SIZE,		 
+    /* 创建交互任务 */
+	#if IS_INTERACTASK_ENABLE
+    xTaskCreate((TaskFunction_t		)InteracTask,						 
+							(const char*		)"INTERAC_TASK",		 
+							(uint16_t			)INTERAC_STK_SIZE,		 
 							(void*				)NULL,						 
-							(UBaseType_t		)POWER_TASK_PRIO,	     
-							(TaskHandle_t*		)&POWER_Task_Handler); 
-	#endif
-
-    /* 创建功率任务 */
-	#if IS_REFEREETASK_ENABLE
-    xTaskCreate((TaskFunction_t		)REFEREE_TASK,						 
-							(const char*		)"REFEREE_TASK",		 
-							(uint16_t			)REFEREE_STK_SIZE,		 
-							(void*				)NULL,						 
-							(UBaseType_t		)REFEREE_TASK_PRIO,	     
-							(TaskHandle_t*		)&REFEREE_Task_Handler); 
+							(UBaseType_t		)INTERAC_TASK_PRIO,	     
+							(TaskHandle_t*		)&INTERAC_Task_Handler); 
 	#endif
 
 	vTaskDelete(SystemStart_Task_Handler);	//删除开始任务

@@ -14,7 +14,6 @@ typedef enum{
     STATE_NUM,
 }DEVICE_STATE;
 
-
 typedef enum{
     INITIAL,
     BURST,

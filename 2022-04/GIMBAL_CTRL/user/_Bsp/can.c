@@ -7,6 +7,7 @@
 #include "can.h"
 #include "motor.h"
 #include "systemState_Task.h"
+#include "rc.h"
 
 #define SEND_ENABLE     1
 
@@ -187,7 +188,10 @@ void CAN2_RX0_IRQHandler(void)
 //底盘信息获取
     Referee_get_Data(CAN2,&CAN2_RxMsg);
 #if SEND_ENABLE
-    CAN_Transmit(CAN2,&CAN_TxMsg[_CAN2][_0x300]);
+	if(xTaskGetTickCount()-rc_ctrl.update_Time<50)
+	{
+		CAN_Transmit(CAN2,&CAN_TxMsg[_CAN2][_0x300]);
+	}
     CAN_Transmit(CAN2,&CAN_TxMsg[_CAN2][_0x1ff]);
 #endif
 }

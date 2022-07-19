@@ -24,9 +24,12 @@ void DBUS_TASK(void *args)
             cover.state_Setup(OFF);
             chassis.state_Setup(OFF);
 			chassis.mode_Setup(INVA);
+			GPIO_ResetBits(GPIOC,GPIO_Pin_8);
         }
         else
         {
+						GPIO_SetBits(GPIOC,GPIO_Pin_8);
+
 							switch (rc_ctrl.rc.s[0])//右档选项
 							{
 	/*------------------------------------------------*/ 

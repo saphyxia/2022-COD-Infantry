@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri May 13 10:02:48 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Jun 05 15:11:47 2022
 <BR><P>
 <H3>Maximum Stack Usage =        288 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -867,10 +867,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bsp_Init
 </UL>
 
-<P><STRONG><a name="[4f]"></a>CAN2_RX0_IRQHandler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, can.o(i.CAN2_RX0_IRQHandler))
+<P><STRONG><a name="[4f]"></a>CAN2_RX0_IRQHandler</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, can.o(i.CAN2_RX0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = CAN2_RX0_IRQHandler &rArr; get_Motor_Data &rArr; Gimbal_Yaw_Gryo_AngleSum &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_Motor_Data
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_Motor_Data
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_Transmit
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_Receive
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Referee_get_Data
@@ -930,11 +931,13 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> freertos_init.o(i.System_Start_Task)
 </UL>
-<P><STRONG><a name="[67]"></a>DBUS_TASK</STRONG> (Thumb, 570 bytes, Stack size 8 bytes, dbus_task.o(i.DBUS_TASK))
+<P><STRONG><a name="[67]"></a>DBUS_TASK</STRONG> (Thumb, 590 bytes, Stack size 8 bytes, dbus_task.o(i.DBUS_TASK))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DBUS_TASK &rArr; vTaskDelayUntil &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> freertos_init.o(i.System_Start_Task)
 </UL>
@@ -1121,12 +1124,15 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[9e]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_ResetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BMI088_GYRO_NS_L
+<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DBUS_TASK
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BMI088_GYRO_NS_L
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BMI088_ACCEL_NS_L
 </UL>
 
 <P><STRONG><a name="[9c]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_SetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BMI088_GYRO_NS_H
+<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DBUS_TASK
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_Init
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BMI088_GYRO_NS_H
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BMI088_ACCEL_NS_H
 </UL>
 
@@ -1771,11 +1777,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_TASK
 </UL>
 
-<P><STRONG><a name="[ba]"></a>gpio_Init</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, gpio.o(i.gpio_Init))
+<P><STRONG><a name="[ba]"></a>gpio_Init</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, gpio.o(i.gpio_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = gpio_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bsp_Init
 </UL>
@@ -2217,6 +2224,7 @@ Global Symbols
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;COVER_TASK
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CHASSIS_TASK
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Vision_Check_Data
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN2_RX0_IRQHandler
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SBUS_TO_RC
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvSampleTimeNow
 </UL>
