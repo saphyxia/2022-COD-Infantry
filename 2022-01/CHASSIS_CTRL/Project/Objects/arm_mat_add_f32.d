@@ -1,9 +1,0 @@
-.\objects\arm_mat_add_f32.o: ..\BaseMent\ARM\arm_mat_add_f32.c
-.\objects\arm_mat_add_f32.o: ..\BaseMent\DSP\Include\arm_math.h
-.\objects\arm_mat_add_f32.o: ..\BaseMent\CMSIS\core_cm4.h
-.\objects\arm_mat_add_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\arm_mat_add_f32.o: ..\BaseMent\CMSIS\core_cmInstr.h
-.\objects\arm_mat_add_f32.o: ..\BaseMent\CMSIS\core_cmFunc.h
-.\objects\arm_mat_add_f32.o: ..\BaseMent\CMSIS\core_cmSimd.h
-.\objects\arm_mat_add_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\arm_mat_add_f32.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
