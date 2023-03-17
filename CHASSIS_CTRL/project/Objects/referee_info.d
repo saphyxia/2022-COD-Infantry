@@ -3,7 +3,7 @@
 .\objects\referee_info.o: ..\User\main\main.h
 .\objects\referee_info.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\referee_info.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\referee_info.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\referee_info.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\referee_info.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\referee_info.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\referee_info.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -38,9 +38,9 @@
 .\objects\referee_info.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\referee_info.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\referee_info.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\referee_info.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\referee_info.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\referee_info.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\referee_info.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\referee_info.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\referee_info.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\referee_info.o: ..\User\_Bsp\can.h
 .\objects\referee_info.o: ..\User\_Deviece\motor.h
 .\objects\referee_info.o: ..\User\_Algorithm\pid.h
@@ -48,7 +48,7 @@
 .\objects\referee_info.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\referee_info.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\referee_info.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\referee_info.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\referee_info.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\referee_info.o: ..\FreeRTOS\include\projdefs.h
 .\objects\referee_info.o: ..\FreeRTOS\include\portable.h
 .\objects\referee_info.o: ..\FreeRTOS\include\deprecated_definitions.h

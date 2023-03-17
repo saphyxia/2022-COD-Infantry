@@ -1,11 +1,11 @@
 .\objects\system.o: ..\system\system.c
 .\objects\system.o: ..\system\system.h
-.\objects\system.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\system.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\system.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\system.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\system.o: ..\stm32LIB\inc\stm32f4xx_can.h
 .\objects\system.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\system.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\system.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\system.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\system.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\system.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h
@@ -27,4 +27,4 @@
 .\objects\system.o: ..\stm32LIB\inc\stm32f4xx_iwdg.h
 .\objects\system.o: ..\stm32LIB\inc\misc.h
 .\objects\system.o: ..\system\sys.h
-.\objects\system.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\system.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h

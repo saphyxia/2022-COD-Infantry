@@ -211,7 +211,7 @@ static void trigger_Ctrl(void)
 {	
     static bool IF_TRIGGER_READY=false;
     int16_t send_Value;
-	float angle_heft;
+		float angle_heft;
     
 	if(rc_ctrl.rc.ch[1] == 0 && Key_MOUSE_L()==false)
 	{

@@ -25,7 +25,7 @@ typedef enum{
     AI,
     AUTO,
     SINGLE,
-	COILED,
+		COILED,
     SHOOT_MODE_NUM,
 }SHOOT_MODE;
 

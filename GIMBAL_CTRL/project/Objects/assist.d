@@ -3,7 +3,7 @@
 .\objects\assist.o: ..\user\main.h
 .\objects\assist.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\assist.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\assist.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\assist.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\assist.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h
@@ -25,10 +25,10 @@
 .\objects\assist.o: ..\stm32LIB\inc\stm32f4xx_iwdg.h
 .\objects\assist.o: ..\stm32LIB\inc\misc.h
 .\objects\assist.o: ..\system\sys.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\assist.o: ..\user\_Bsp\gpio.h
 .\objects\assist.o: ..\user\_Bsp\tim.h
 .\objects\assist.o: ..\user\_Bsp\flash.h
@@ -39,9 +39,9 @@
 .\objects\assist.o: ..\user\_Bsp\AHRS.h
 .\objects\assist.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\assist.o: ..\system\system.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\assist.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\assist.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\assist.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\assist.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\assist.o: ..\FreeRTOS\include\projdefs.h
 .\objects\assist.o: ..\FreeRTOS\include\portable.h

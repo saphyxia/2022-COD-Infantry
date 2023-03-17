@@ -2,7 +2,7 @@
 .\objects\main.o: ..\User\main\main.h
 .\objects\main.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\main.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\main.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\main.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\main.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -37,9 +37,9 @@
 .\objects\main.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\main.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\main.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\main.o: ..\User\_Bsp\can.h
 .\objects\main.o: ..\User\_Deviece\motor.h
 .\objects\main.o: ..\User\_Algorithm\pid.h
@@ -48,7 +48,7 @@
 .\objects\main.o: ..\User\_Algorithm\filter.h
 .\objects\main.o: ..\User\_DSP\Include\arm_math.h
 .\objects\main.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\main.o: ..\User\_Bsp\delay.h
 .\objects\main.o: ..\User\_Bsp\gpio.h
 .\objects\main.o: ..\User\_Bsp\myiic.h
@@ -60,7 +60,7 @@
 .\objects\main.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\main.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\main.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\main.o: ..\FreeRTOS\include\projdefs.h
 .\objects\main.o: ..\FreeRTOS\include\portable.h
 .\objects\main.o: ..\FreeRTOS\include\deprecated_definitions.h

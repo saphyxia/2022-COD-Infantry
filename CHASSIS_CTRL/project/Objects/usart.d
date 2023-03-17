@@ -1,9 +1,9 @@
 .\objects\usart.o: ..\User\_Bsp\usart.c
 .\objects\usart.o: ..\User\_Bsp\usart.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\usart.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -40,10 +40,10 @@
 .\objects\usart.o: ..\STM32LIB\inc\stm32f4xx_sai.h
 .\objects\usart.o: ..\system\sys.h
 .\objects\usart.o: ..\User\main\main.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 .\objects\usart.o: ..\User\_Task\ChassisTask.h
 .\objects\usart.o: ..\User\_Bsp\rc.h
 .\objects\usart.o: ..\User\_Algorithm\filter.h
@@ -53,7 +53,7 @@
 .\objects\usart.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\usart.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\usart.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\usart.o: ..\FreeRTOS\include\projdefs.h
 .\objects\usart.o: ..\FreeRTOS\include\portable.h
 .\objects\usart.o: ..\FreeRTOS\include\deprecated_definitions.h

@@ -1,12 +1,12 @@
 .\objects\freertos_init.o: ..\FreeRTOS\FreeRTOS_Init.c
 .\objects\freertos_init.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\freertos_init.o: ..\system\system.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\freertos_init.o: ..\stm32LIB\inc\stm32f4xx_can.h
 .\objects\freertos_init.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\freertos_init.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\freertos_init.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\freertos_init.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\freertos_init.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h
@@ -28,9 +28,9 @@
 .\objects\freertos_init.o: ..\stm32LIB\inc\stm32f4xx_iwdg.h
 .\objects\freertos_init.o: ..\stm32LIB\inc\misc.h
 .\objects\freertos_init.o: ..\system\sys.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\projdefs.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\portable.h

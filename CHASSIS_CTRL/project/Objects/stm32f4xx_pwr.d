@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_pwr.o: ..\STM32LIB\inc\stm32f4xx_pwr.h
 .\objects\stm32f4xx_pwr.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\stm32f4xx_pwr.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\stm32f4xx_pwr.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_pwr.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\stm32f4xx_pwr.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\stm32f4xx_pwr.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\stm32f4xx_pwr.o: ..\STM32LIB\CMSIS\core_cmSimd.h

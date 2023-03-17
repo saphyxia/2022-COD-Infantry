@@ -23,7 +23,7 @@ void Bsp_Init(void)
 	remote_control_init();
 	Beep_Init();
 
-    TIM1_PWM_Init();//弹舱盖舵机
+  TIM1_PWM_Init();//弹舱盖舵机
 
 	CAN1_Init();
 	CAN2_Init();
@@ -34,7 +34,6 @@ void Device_Init(void)
 {
 	gimbal.state_Setup (CALIBRATING);
 	shoot.state_Setup  (CALIBRATING);
-	
 }
 
 //初始化算法参数

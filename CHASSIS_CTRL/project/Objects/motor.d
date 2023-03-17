@@ -3,7 +3,7 @@
 .\objects\motor.o: ..\User\main\main.h
 .\objects\motor.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\motor.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\motor.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\motor.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\motor.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\motor.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -38,9 +38,9 @@
 .\objects\motor.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\motor.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\motor.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\motor.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\motor.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\motor.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\motor.o: ..\User\_Algorithm\pid.h
 .\objects\motor.o: ..\User\_Bsp\can.h
 .\objects\motor.o: ..\User\_Deviece\motor.h

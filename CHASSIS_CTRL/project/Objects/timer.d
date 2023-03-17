@@ -3,7 +3,7 @@
 .\objects\timer.o: ..\User\main\main.h
 .\objects\timer.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\timer.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\timer.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\timer.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\timer.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -38,6 +38,6 @@
 .\objects\timer.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\timer.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\timer.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h

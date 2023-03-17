@@ -447,7 +447,7 @@ static float AcclerateCurve(float x , float k)
 }
 
 /**
- * @description: 公式原型 y =1/(1+e^(?k(-(x-(5/k))?2/k) ) )
+ * @description: 公式原型 y =1/(1+e^(-k(-x+3/k)))
   当k = 10 , x = 0.8时 y = 0.01
  */
 static float DecclerateCurve(float x , float k)

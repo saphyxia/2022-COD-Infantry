@@ -1,9 +1,9 @@
 .\objects\freertos_init.o: ..\FreeRTOS\FreeRTOS_Init.c
 .\objects\freertos_init.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\FreeRTOSConfig.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\projdefs.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\portable.h
 .\objects\freertos_init.o: ..\FreeRTOS\include\deprecated_definitions.h
@@ -49,6 +49,6 @@
 .\objects\freertos_init.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\freertos_init.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\freertos_init.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\freertos_init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\freertos_init.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h

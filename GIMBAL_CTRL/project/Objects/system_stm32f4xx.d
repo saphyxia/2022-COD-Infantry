@@ -1,7 +1,7 @@
 .\objects\system_stm32f4xx.o: ..\stm32LIB\CMSIS\system_stm32f4xx.c
 .\objects\system_stm32f4xx.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\system_stm32f4xx.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\system_stm32f4xx.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_stm32f4xx.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\system_stm32f4xx.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\system_stm32f4xx.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\system_stm32f4xx.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h

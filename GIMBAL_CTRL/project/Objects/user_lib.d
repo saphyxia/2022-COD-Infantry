@@ -3,7 +3,7 @@
 .\objects\user_lib.o: ..\user\main.h
 .\objects\user_lib.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\user_lib.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\user_lib.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\user_lib.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\user_lib.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h
@@ -25,10 +25,10 @@
 .\objects\user_lib.o: ..\stm32LIB\inc\stm32f4xx_iwdg.h
 .\objects\user_lib.o: ..\stm32LIB\inc\misc.h
 .\objects\user_lib.o: ..\system\sys.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\user_lib.o: ..\user\_Bsp\gpio.h
 .\objects\user_lib.o: ..\user\_Bsp\tim.h
 .\objects\user_lib.o: ..\user\_Bsp\flash.h
@@ -39,9 +39,9 @@
 .\objects\user_lib.o: ..\user\_Bsp\AHRS.h
 .\objects\user_lib.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\user_lib.o: ..\system\system.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\user_lib.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\user_lib.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\user_lib.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\user_lib.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\user_lib.o: ..\FreeRTOS\include\projdefs.h
 .\objects\user_lib.o: ..\FreeRTOS\include\portable.h

@@ -3,7 +3,7 @@
 .\objects\filter.o: ..\User\main\main.h
 .\objects\filter.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\filter.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\filter.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\filter.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\filter.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\filter.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -38,8 +38,8 @@
 .\objects\filter.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\filter.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\filter.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\filter.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\filter.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\filter.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\filter.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\filter.o: ..\User\_DSP\Include\arm_math.h
 .\objects\filter.o: ..\STM32LIB\CMSIS\core_cm4.h

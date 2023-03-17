@@ -2,7 +2,7 @@
 .\objects\ui.o: ..\User\_Deviece\UI.h
 .\objects\ui.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\ui.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\ui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ui.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\ui.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\ui.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\ui.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -39,11 +39,11 @@
 .\objects\ui.o: ..\STM32LIB\inc\stm32f4xx_sai.h
 .\objects\ui.o: ..\User\_Deviece\referee_info.h
 .\objects\ui.o: ..\User\main\main.h
-.\objects\ui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\ui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\ui.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\ui.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\ui.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\ui.o: ..\User\_Algorithm\crc.h
-.\objects\ui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\ui.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\ui.o: ..\User\_Bsp\usart.h
 .\objects\ui.o: ..\User\_Task\ChassisTask.h
 .\objects\ui.o: ..\User\_Bsp\rc.h
@@ -54,7 +54,7 @@
 .\objects\ui.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\ui.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\ui.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\ui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\ui.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\ui.o: ..\FreeRTOS\include\projdefs.h
 .\objects\ui.o: ..\FreeRTOS\include\portable.h
 .\objects\ui.o: ..\FreeRTOS\include\deprecated_definitions.h

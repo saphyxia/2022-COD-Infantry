@@ -2,7 +2,7 @@
 .\objects\gpio.o: ..\User\_Bsp\gpio.h
 .\objects\gpio.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\gpio.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpio.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\gpio.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\gpio.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\gpio.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -39,7 +39,7 @@
 .\objects\gpio.o: ..\STM32LIB\inc\stm32f4xx_sai.h
 .\objects\gpio.o: ..\User\_Bsp\delay.h
 .\objects\gpio.o: ..\User\main\main.h
-.\objects\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\gpio.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\gpio.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\gpio.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
+.\objects\gpio.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h

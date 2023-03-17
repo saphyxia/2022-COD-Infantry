@@ -3,7 +3,7 @@
 .\objects\bmi088middleware.o: ..\user\main.h
 .\objects\bmi088middleware.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\bmi088middleware.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\bmi088middleware.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\bmi088middleware.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\bmi088middleware.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h
@@ -25,10 +25,10 @@
 .\objects\bmi088middleware.o: ..\stm32LIB\inc\stm32f4xx_iwdg.h
 .\objects\bmi088middleware.o: ..\stm32LIB\inc\misc.h
 .\objects\bmi088middleware.o: ..\system\sys.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\bmi088middleware.o: ..\user\_Bsp\gpio.h
 .\objects\bmi088middleware.o: ..\user\_Bsp\tim.h
 .\objects\bmi088middleware.o: ..\user\_Bsp\flash.h
@@ -39,9 +39,9 @@
 .\objects\bmi088middleware.o: ..\user\_Bsp\AHRS.h
 .\objects\bmi088middleware.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\bmi088middleware.o: ..\system\system.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\bmi088middleware.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\bmi088middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\bmi088middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\bmi088middleware.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\bmi088middleware.o: ..\FreeRTOS\include\projdefs.h
 .\objects\bmi088middleware.o: ..\FreeRTOS\include\portable.h

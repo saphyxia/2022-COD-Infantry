@@ -3,7 +3,7 @@
 .\objects\ist8310middleware.o: ..\user\main.h
 .\objects\ist8310middleware.o: ..\stm32LIB\CMSIS\stm32f4xx.h
 .\objects\ist8310middleware.o: ..\stm32LIB\CMSIS\Include\core_cm4.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\ist8310middleware.o: ..\stm32LIB\CMSIS\Include\core_cmInstr.h
 .\objects\ist8310middleware.o: ..\stm32LIB\CMSIS\Include\cmsis_armcc.h
 .\objects\ist8310middleware.o: ..\stm32LIB\CMSIS\Include\core_cmFunc.h
@@ -25,10 +25,10 @@
 .\objects\ist8310middleware.o: ..\stm32LIB\inc\stm32f4xx_iwdg.h
 .\objects\ist8310middleware.o: ..\stm32LIB\inc\misc.h
 .\objects\ist8310middleware.o: ..\system\sys.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\ist8310middleware.o: ..\user\_Bsp\gpio.h
 .\objects\ist8310middleware.o: ..\user\_Bsp\tim.h
 .\objects\ist8310middleware.o: ..\user\_Bsp\flash.h
@@ -39,9 +39,9 @@
 .\objects\ist8310middleware.o: ..\user\_Bsp\AHRS.h
 .\objects\ist8310middleware.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\ist8310middleware.o: ..\system\system.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\ist8310middleware.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\ist8310middleware.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\ist8310middleware.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\ist8310middleware.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\ist8310middleware.o: ..\FreeRTOS\include\projdefs.h
 .\objects\ist8310middleware.o: ..\FreeRTOS\include\portable.h

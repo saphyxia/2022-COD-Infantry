@@ -4,7 +4,7 @@
 .\objects\adc.o: ..\User\main\main.h
 .\objects\adc.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\adc.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\adc.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\adc.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\adc.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -39,7 +39,7 @@
 .\objects\adc.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\adc.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\adc.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\adc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\adc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\adc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\adc.o: ..\User\_Bsp\delay.h

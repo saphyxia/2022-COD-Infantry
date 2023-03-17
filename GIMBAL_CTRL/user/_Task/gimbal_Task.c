@@ -6,7 +6,7 @@
 GIMBAL gimbal=
 {
     .state=OFF,
-	.vision=&vision,
+		.vision=&vision,
     .imu=&imu,
     .dr16=&rc_ctrl,
     .yaw=&Gimbal[YAW],

@@ -132,7 +132,7 @@ void IMU_TASK(void *args)
         get_angle(INS_quat, INS_angle + INS_YAW_ADDRESS_OFFSET , INS_angle + INS_PITCH_ADDRESS_OFFSET, INS_angle + INS_ROLL_ADDRESS_OFFSET);
         
         imu.calibrating=0;//校准完毕
-		INS_angle[0]= Gimbal_Yaw_Gryo_AngleSum(&Yaw_Gyro_Angle , INS_angle[0]);
+				INS_angle[0]= Gimbal_Yaw_Gryo_AngleSum(&Yaw_Gyro_Angle , INS_angle[0]);
         imu.yaw_Angle = INS_angle[0]*180.0f/3.1415926f;//过零角度处理
         imu.pit_Angle = INS_angle[2]*180.0f/3.1415926f;
         imu.rol_Angle = INS_angle[1]*180.0f/3.1415926f;

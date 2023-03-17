@@ -3,7 +3,7 @@
 .\objects\can.o: ..\User\main\main.h
 .\objects\can.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\can.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\can.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\can.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\can.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\can.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\can.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -38,9 +38,9 @@
 .\objects\can.o: ..\STM32LIB\inc\stm32f4xx_dma2d.h
 .\objects\can.o: ..\STM32LIB\inc\stm32f4xx_fmc.h
 .\objects\can.o: ..\STM32LIB\inc\stm32f4xx_sai.h
-.\objects\can.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\can.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\can.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\can.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\can.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\can.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\can.o: ..\User\_Deviece\motor.h
 .\objects\can.o: ..\User\_Algorithm\pid.h
 .\objects\can.o: ..\User\_Bsp\can.h
@@ -49,12 +49,12 @@
 .\objects\can.o: ..\User\_Algorithm\filter.h
 .\objects\can.o: ..\User\_DSP\Include\arm_math.h
 .\objects\can.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\can.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\can.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
 .\objects\can.o: ..\User\_Task\ImuTask.h
 .\objects\can.o: ..\FreeRTOS\FreeRTOS_Init.h
 .\objects\can.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\can.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\can.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\can.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 .\objects\can.o: ..\FreeRTOS\include\projdefs.h
 .\objects\can.o: ..\FreeRTOS\include\portable.h
 .\objects\can.o: ..\FreeRTOS\include\deprecated_definitions.h

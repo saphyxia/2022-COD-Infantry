@@ -187,21 +187,21 @@ static void send2uart1(void)
 {
 		
     UART1_TX_BUF[0]  = 0x69;
-    UART1_TX_BUF[1]  = robot.id;
+    UART1_TX_BUF[1]  = 2;//robot.id;
     UART1_TX_BUF[2]  = 1;
     UART1_TX_BUF[3]  = tx2.kf_Flag;
     UART1_TX_BUF[4]  = (int)ABS(14.5f);
     UART1_TX_BUF[5]  = (int)ABS(14.5f*100)%100;
     UART1_TX_BUF[6]  = (int16_t) (INS_angle[2]);
     UART1_TX_BUF[7]  = (int16_t)((INS_angle[2])*100.f)%100;
-	UART1_TX_BUF[8]  = (int16_t)((INS_angle[2])*10000.f)%100;
+		UART1_TX_BUF[8]  = (int16_t)((INS_angle[2])*10000.f)%100;
     UART1_TX_BUF[9]  = (int16_t)(-INS_angle[0]);
     UART1_TX_BUF[10] = (int16_t)((-INS_angle[0])*100.f)%100;
     UART1_TX_BUF[11] = (int16_t)((-INS_angle[0])*10000.f)%100;
-	UART1_TX_BUF[12] = (UART1_TX_BUF[1]+UART1_TX_BUF[2]+UART1_TX_BUF[3] + UART1_TX_BUF[4]+UART1_TX_BUF[5] + UART1_TX_BUF[6]
+		UART1_TX_BUF[12] = (UART1_TX_BUF[1]+UART1_TX_BUF[2]+UART1_TX_BUF[3] + UART1_TX_BUF[4]+UART1_TX_BUF[5] + UART1_TX_BUF[6]
 					 + UART1_TX_BUF[7]+UART1_TX_BUF[8] + UART1_TX_BUF[9]+UART1_TX_BUF[10]+UART1_TX_BUF[11])/11;
 	
-	UART1_TX_BUF[13] = 0x96;
+		UART1_TX_BUF[13] = 0x96;
 		
     DMA_Cmd(DMA2_Stream6,ENABLE);
 }

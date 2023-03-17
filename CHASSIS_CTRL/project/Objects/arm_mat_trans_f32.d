@@ -1,9 +1,9 @@
 .\objects\arm_mat_trans_f32.o: ..\STM32LIB\Device\arm_mat_trans_f32.c
 .\objects\arm_mat_trans_f32.o: ..\User\_DSP\Include\arm_math.h
 .\objects\arm_mat_trans_f32.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\arm_mat_trans_f32.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\arm_mat_trans_f32.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\arm_mat_trans_f32.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\arm_mat_trans_f32.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\arm_mat_trans_f32.o: ..\STM32LIB\CMSIS\core_cmSimd.h
-.\objects\arm_mat_trans_f32.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\arm_mat_trans_f32.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\arm_mat_trans_f32.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\arm_mat_trans_f32.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h

@@ -1,7 +1,7 @@
 .\objects\spi.o: ..\User\_Bsp\spi.c
 .\objects\spi.o: ..\STM32LIB\CMSIS\stm32f4xx.h
 .\objects\spi.o: ..\STM32LIB\CMSIS\core_cm4.h
-.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\spi.o: ..\STM32LIB\CMSIS\core_cmInstr.h
 .\objects\spi.o: ..\STM32LIB\CMSIS\core_cmFunc.h
 .\objects\spi.o: ..\STM32LIB\CMSIS\core_cmSimd.h
@@ -39,9 +39,9 @@
 .\objects\spi.o: ..\STM32LIB\CMSIS\stm32f4xx_it.h
 .\objects\spi.o: ..\User\_Bsp\imu.h
 .\objects\spi.o: ..\User\main\main.h
-.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 .\objects\spi.o: ..\User\_Algorithm\filter.h
 .\objects\spi.o: ..\User\_DSP\Include\arm_math.h
 .\objects\spi.o: ..\STM32LIB\CMSIS\core_cm4.h
@@ -49,4 +49,4 @@
 .\objects\spi.o: ..\system\sys.h
 .\objects\spi.o: ..\User\_Bsp\delay.h
 .\objects\spi.o: ..\User\_Bsp\mpu6500_reg.h
-.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdarg.h
