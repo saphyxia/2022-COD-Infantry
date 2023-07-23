@@ -1,6 +1,6 @@
 # 2022-COD-Standard
 
-> 2022 RoboMaster 机甲大师超级对抗赛USTL步兵机器人固件
+> 2022 RoboMaster 机甲大师超级对抗赛中部分区赛
 
 ## 依赖工具及软硬件环境
 
