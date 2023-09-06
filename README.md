@@ -2,6 +2,8 @@
 
 > 2022 RoboMaster 机甲大师超级对抗赛中部分区赛
 
+![balance](./pic/balance.jpeg)
+
 ## 依赖工具及软硬件环境
 
 工具：VSCode,Keil5
